@@ -1,0 +1,86 @@
+views
+
+1. Outfit Page (/outfit)
+- Display all the outfits sorted by popularity
+- By clicking the image of outfit in list -> move to 3. Outfit Detail page
+- By clicking 'Filter' button -> move to 2. Outfit Filter Setting Pop-up Page
+  
+2. Outfit Filter Setting Pop-up Page
+- Display all the checklist of filter
+  - 'Including My clothes', 'Configurable by my Closet' button
+  - Clothes type list, Clothes Color list
+- If user check some of the filters and click 'Confirm' button -> pop-up window is closed, filter applied
+- By clicking 'Cancel' button -> pop-up window is closed
+
+3. Outfit Detail Page (/outfit/:id)
+- Display detail information of selected outfit and the list of clothes that are included in outfit
+- By clicking image of clothes -> Move to 4. Outfit Clothes Pop-up Page
+
+4. Outfit clothes Pop-up Page (/outfit/:id/clothes/:id)
+- Display detail information of selected clothes
+- By clicking 'Close 'button'-> pop-up window is closed.
+- If user have clothes with same label, display user's clothes
+- Is user don't have clothes with same label, display 'Purchase Link' Button
+- By clicking 'Purchase Link' button -> move to Shopping mall page outside
+  
+  
+frontend design
+
+Containers
+
+- OutfitList
+  - `Title`
+    - Text data that shows user entered outfit page
+  - `Image`
+    - Outfit images
+  - `Label`
+    - Labels of clothes in outfit
+  - `clickFilerHandler()`
+    - This method will be called when the user clicks the `Filter` button
+    - Outfit Filter Setting Pop-up Page (`/outfit/filter`) will pop up
+  - 'clickOutfitDetailHandler()`
+    - This method will be called when the user clicks the image of the outfit
+    - Move to Outfit Detail Page (`outfit/:id`)
+
+- OutfitFilter
+  - `clickFilterCancelHandler()`
+    - This method will be called when the user clicks the `Cancel` button
+    - Outfit Filter Setting Pop-up Page will be closed
+  - `clickFilterConfirmHandler()`
+    - This method will be called when the user clicks the `Confirm` button
+    - Outfit Filter Setting Pop-up Page will be closed and Outfit Page (`/outfit`) will be refreshed with set filter
+    
+
+- Outfit Detail
+  - `Image`
+    - Image of selected outfit
+  - `Label`
+    - Labels of clothes in outfit
+  - `Description`
+    - Description of outfit
+  - `clothImage`
+    - Image of clothes in outfit
+  - `clickOutfitClothDetailHander()`
+    - This method will be called when the user clicks the image of the clothes
+    - Move to Outfit Cloth Detail Page (`outfit/:id/cloth/:id`) 
+    
+- Outfit Cloth Detail
+  - `Image`
+    - Image of selected clothes in outfit
+  - `userImage`
+    - Image of clothes with same label that user has
+  - `Label`
+    - Label of selected clothes in outfit
+  - `clickPurchaseHandler()`
+    - This method will be called when the user clicks `Purchase Link` button
+    - Move to external shopping mall site
+
+
+backend design
+
+
+outfit/
+
+outfit/:id/
+
+

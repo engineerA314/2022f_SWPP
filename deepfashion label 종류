@@ -1,0 +1,101 @@
+옷 종류
+    ['상의', ['반소매 티셔츠', '피케/카라 티셔츠', '긴소매 티셔츠',
+      '맨투맨/스웨트셔츠', '민소매 티셔츠', '후드 티셔츠', '셔츠/블라우스', '니트/스웨터', '기타 상의']],
+    ['바지', ['데님 팬츠', '숏 팬츠', '코튼 팬츠', '레깅스',
+    '슈트 팬츠/슬랙스', '점프 슈트/오버올', '트레이닝/조거 팬츠', '기타 바지']],
+    ['아우터', ['후드 집업', '환절기 코트', '블루종/MA-1', '겨울 싱글 코트',
+    '레더/라이더스 재킷', '겨울 더블 코트', '무스탕/퍼', '겨울 기타 코트',
+    '롱패딩/롱헤비 아우터', '트러커 재킷', '슈트/블레이저 재킷', '숏패딩/숏헤비 아우터',
+    '카디건', '패딩 베스트', '아노락 재킷','베스트', '플리스/뽀글이', '사파리/헌팅 재킷',
+    '트레이닝 재킷', '나일론/코치 재킷', '스타디움 재킷', '기타 아우터']]]
+
+
+Anorak         1		아노락 재킷
+Blazer         1		슈트/블레이저 재킷
+Blouse         1		셔츠/블라우스
+Bomber         1		스타디움 재킷
+Button-Down    1		셔츠/블라우스
+Cardigan       1		카디건
+Flannel        1		셔츠/블라우스		(+ 체크무늬)
+Halter         1		여자 옷			(민소매 티셔츠?)
+Henley         1		긴소매 티셔츠
+Hoodie         1		후드 티셔츠
+Jacket         1		트러커 재킷
+Jersey         1		트레이닝 재킷	
+Parka          1		롱패딩/롱헤비 아우터
+Peacoat        1		겨울 싱글 코트
+Poncho         1		기타 아우터
+Sweater        1		니트/스웨터
+Tank           1		민소매 티셔츠		(여자옷)
+Tee            1		반소매 티셔츠
+Top            1		반소매 티셔츠
+Turtleneck     1		니트/스웨터
+
+Capris         2		트레이닝/조거 팬츠
+Chinos         2		슈트 팬츠/슬랙스
+Culottes       2		트레이닝/조거 팬츠
+Cutoffs        2		숏 팬츠
+Gauchos        2		트레이닝/조거 팬츠
+Jeans          2		데님 팬츠
+Jeggings       2		레깅스
+Jodhpurs       2		슈트 팬츠/슬랙스
+Joggers        2		트레이닝/조거 팬츠
+Leggings       2		레깅스
+Sarong         2		기타 바지	(여자 옷)
+Shorts         2		숏 팬츠
+Skirt          2		치마 (여자 옷)
+Sweatpants     2		트레이닝/조거 팬츠
+Sweatshorts    2		숏 팬츠
+Trunks         2		숏 팬츠
+
+Caftan         3		여자 옷
+Cape           3		겨울 더블 코트
+Coat           3		겨울 싱글 코트
+Coverup        3		여자옷
+Dress          3		여자옷
+Jumpsuit       3		점프 슈트/오버올
+Kaftan         3		여자 옷
+Kimono         3		여자 옷
+Nightdress     3		여자 옷 
+Onesie         3		점프 슈트/오버올
+Robe           3		겨울 더블 코트
+Romper         3		여자 옷
+Shirtdress     3		여자 옷
+Sundress       3		여자 옷
+
+-> 아우터 예측이 잘 안 되기는 함
+
+
+
+attribute of clothes
+
+floral               1		
+graphic              1
+striped              1		스트라이프
+embroidered          1
+pleated              1
+solid                1
+lattice              1
+
+type 1 이 texture-related attr 고 나머지는 fabric, shape, part, style 이라서 사용하지 않는게 좋을듯
+
+long_sleeve          2
+short_sleeve         2
+sleeveless           2
+maxi_length          3
+mini_length          3
+no_dress             3
+crew_neckline        4
+v_neckline           4
+square_neckline      4
+no_neckline          4
+denim                5
+chiffon              5
+cotton               5
+leather              5
+faux                 5
+knit                 5
+tight                6
+loose                6
+conventional         6
+

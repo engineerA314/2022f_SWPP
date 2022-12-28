@@ -1,0 +1,29 @@
+Arguments: 
+  /usr/local/bin/node /usr/share/yarn/bin/yarn.js add typescript @types/node
+
+PATH: 
+  /home/engineer_a/anaconda3/bin:/home/engineer_a/anaconda3/condabin:/home/engineer_a/anaconda3/bin:/home/engineer_a/anaconda3/condabin:/home/engineer_a/anaconda3/condabin:/home/engineer_a/.cargo/bin:/home/engineer_a/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/lib/jvm/jdk-11.0.12/Contents/Home/bin:/usr/lib/jvm/jdk-11.0.12/Contents/Home/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.17.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/typescript: ETIMEDOUT
+      at Timeout._onTimeout (/usr/share/yarn/lib/cli.js:141550:19)
+      at listOnTimeout (node:internal/timers:559:17)
+      at processTimers (node:internal/timers:502:7)
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
